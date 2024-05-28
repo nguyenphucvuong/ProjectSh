@@ -24,8 +24,8 @@ const ShoppingCart = ({ route }) => {
 
   const handleCreateOneData = (cartManager) => {
     // createOneDiscount({
-    //   code: 'ABC',
-    //   percentage: 50,
+    //   code: 'ABCD',
+    //   percentage: 90,
     //   status: 'active',
     // });
     console.log(email());
@@ -107,7 +107,7 @@ const ShoppingCart = ({ route }) => {
           title="Mua ngay"
           style={styles.muaNgaybtn}
           color={"#5cc761"}
-          onPress={handleCreateOneData}
+          onPress={changeScreen}
         >
           {/* <Text style={styles.muaNgayText}>Mua ngay</Text> */}
         </Button>

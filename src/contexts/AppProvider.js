@@ -33,7 +33,8 @@ export const AppProvider = ({ children }) => {
                 billData.getAllBillData(user.email);
                 // console.log("userEmail", user.email);
 
-                // console.log("aaaaaaa", cartData.emailUser);
+                // console.log("aaaaaaa", cartData.arrPro);
+                // console.log("bbbbbbb", billData.arrBill);
                 // console.log("if")
             } else {
                 // console.log("else")

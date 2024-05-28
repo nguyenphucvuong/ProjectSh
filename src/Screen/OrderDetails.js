@@ -7,7 +7,7 @@ import { Color, FontFamily, FontSize, Border } from "../../GlobalStyles";
 import { FlatlistItemsComponent } from "../component";
 import { CartManager, Cart, Discount, DiscountManager } from "../models"; // Import lớp quản lý sản phẩm
 import { deleteOneCartData, createOneBill, deleteOneDiscountData } from "../apis/firebaseComponent";
-import { AppContext } from '../contexts/AppProvider';
+import { AppContext, email } from '../contexts/AppProvider';
 
 
 
@@ -120,7 +120,7 @@ const OrderDetails = ({ route }) => {
     // Alert.alert('Đặt hàng thành công!', alertt)
 
     createOneBill({
-      username: "admin1@gmail.com",
+      username: email(),
       name: nameCus,
       cart: cart.arrPro,
       total: totalPrice - discountAmount,
