@@ -66,7 +66,7 @@ export function Home({ navigation, route }) {
   }
   user = route.params.user;
   list = route.params.data;
-  console.log('b123', list);
+  // console.log('b123', list);
 
 
 
@@ -135,7 +135,7 @@ const HomeScreen = (navigation) => {
   useEffect(() => {
     getData;
     setListSP(list);
-    console.log('data3', listSP);
+    // console.log('data3', listSP);t
   }, []);
 
   const OnchangeCategory = id => {
